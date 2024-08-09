@@ -1,0 +1,18 @@
+#This is recursive, all .env files will be ignored
+Options All -Indexes
+<Files .htaccess>
+Order Allow,Deny
+Deny from all
+</Files>
+<FilesMatch "^\.env">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+<FilesMatch "dockerfile">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+<FilesMatch "docker-compose.yml">
+Order Allow,Deny
+Deny from all
+</FilesMatch>

@@ -1,0 +1,2 @@
+APACHE_PORT=9092
+DOCKERFILE=dockerfile-development
