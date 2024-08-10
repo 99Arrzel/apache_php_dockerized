@@ -1,3 +1,4 @@
+ARG uid=1000  # Default UID if not provided during build
 FROM php:8.3-apache
 RUN apt-get update
 # 1. development packages
