@@ -1,9 +1,11 @@
 services:
   php:
     restart: unless-stopped
-    build:
-      context: .
-      dockerfile: ${DOCKERFILE}
+
+    image: ${PHP_IMAGE}
+    # build:
+    #   context: .
+    #   dockerfile: ${DOCKERFILE}
     volumes:
       # - ../../../:/var/www/html
       - ./:/var/www/html
