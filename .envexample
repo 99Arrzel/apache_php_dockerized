@@ -1,2 +1,3 @@
-APACHE_PORT=9092
-DOCKERFILE=dockerfile-development
+APACHE_PORT=8083
+# PHP_IMAGE=php8.3-prod
+PHP_IMAGE=php8.3-dev
